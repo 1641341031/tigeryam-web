@@ -1,0 +1,74 @@
+.navWrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    min-width: 1200px;
+}
+nav{
+    height: 3.75em;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: relative;
+    /* overflow: hidden;  这里不能设置溢出，要不然小视口的菜单不会显示:before小三角 */
+}
+nav .brand{
+    margin-left: 0.5em;
+}
+nav .brand a{
+    font-size: 1.5em;
+    font-weight:900;
+    text-decoration: none;
+    padding: 0.125em 0.375em ;
+    color: #ff6900;
+}
+nav ul{
+    height: 100%;
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+nav ul li{
+    height: 100%;
+    padding: 0.125em 0.375em ;
+}
+nav ul li a{
+    display: inline-block;
+    line-height: 3.75em;
+    color: #fff;
+    padding: 0 0.375em ;
+    text-decoration: none;
+    transition: var(--colortransition);
+}
+nav ul li a:hover{
+    color: #ff6900;
+}
+nav .lg-rg{
+    margin-right: 0.5em;
+    padding: 0 0.25em;
+    height: 100%;
+    cursor: pointer; 
+}
+nav .lg-rg a{
+    margin: 0 0.5em;
+    display: inline-block;
+    line-height: 3.75em;
+    text-decoration: none;
+    transition: var(--colortransition);
+    /* color: #000; */
+    color: #fff;
+}
+nav .lg-rg a:hover{
+    color: #ff6900;
+}
+nav .lg-rg span{
+    color: rgb(156, 155, 155);
+}
+nav .icon{
+    display: none;
+}

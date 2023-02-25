@@ -1,0 +1,186 @@
+.root-wrap {
+    min-width: 300px;
+    max-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    .pic-root-wrap {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .carousetWrap {
+            display: none;
+        }
+        .pic-main-wrap {
+            padding: 6px;
+            width: 100%;
+            height: 450px;
+            img {
+                border-radius: 0.5em;
+                width: 100%;
+                height: 100%;
+            }
+            .mask {
+                width: 170px;
+                height: 170px;
+                background: rgba(62, 172, 240, 0.4);
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                cursor: move;
+                display: none;
+            }
+        }
+        .auxChart {
+            width:400px;
+            height: 400px;
+            position: absolute;
+            left: 610px;
+            margin-top: 8px;
+            display: none;
+            overflow: hidden;
+            img{
+                position: inherit;
+                height: 800px;
+                width: 800px;
+            }
+        }
+        .pic-list-wrap {
+            width: 100%;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                li {
+                    padding: 4px;
+                    &:hover {
+                        border: 1px solid var(--colororigin);
+                        border-radius: 0.5em;
+                    }
+                    img {
+                        border-radius: 0.5em;
+                        width: 100%;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+    .pro-info-wrap {
+        width: 600px;
+        .title-price-wrap {
+            width: 100%;
+            height: 100px;
+            padding: 4px;
+            .title {
+                height: 70px;
+                overflow: hidden;
+                h1 {
+                    font-size: 20px;
+                }
+            }
+            .price-wrap {
+                color: red;
+                display: flex;
+                .promotion-price {
+                    em {
+                        font-size: 0.5em;
+                    }
+                    span {
+                        font-size: 1.2em;
+                    }
+                }
+                .price{
+                    color: rgb(92, 92, 92);
+                    font-size: .5em;
+                    line-height: 4em;
+                    margin-left: 5em;
+                    text-decoration: line-through;
+                }
+                .sales {
+                    color: rgb(92, 92, 92);
+                    margin-left: 5em;
+                    font-size: 0.5em;
+                    line-height: 4em;
+                }
+            }
+        }
+        .product-item-info {
+            width: 100%;
+            padding: 1em;
+            & > span {
+                color: rgb(99, 98, 98);
+            }
+            & > div + div {
+                margin-top: 1.5em;
+            }
+            .address-wrap {
+            }
+            .express-express {
+            }
+            .spec-wrap{
+                background-color: antiquewhite;
+            }
+            .count-wrap {
+                button {
+                    width: 1.5em;
+                    height: 1.5em;
+                    border: none;
+                    font-size: 1em;
+                    cursor: pointer;
+                }
+                .count {
+                    display: inline-block;
+                    width: 1.5em;
+                    height: 1.5em;
+                    text-align: center;
+                    margin: 0 4px;
+                }
+            }
+        }
+        .buy-wrap {
+            width: 100%;
+            height: 100px;
+            // background-color: burlywood;
+            padding: 0.5em;
+            display: flex;
+            button {
+                border: none;
+                padding: 2px;
+                width: 8.5625em;
+                height: 3em;
+                color: #fff;
+                cursor: pointer;
+            }
+            .bt-group {
+                .buy-bt {
+                    background: linear-gradient(90deg, rgb(255, 119, 0), rgb(255, 73, 0));
+                    box-shadow: rgba(255, 119, 0, 0.2) 0px 9px 13px 0px;
+                    border-radius: 1.5em 0 0 1.5em;
+                }
+                .car-bt {
+                    background: linear-gradient(90deg, rgb(255, 203, 0), rgb(255, 148, 2));
+                    box-shadow: rgba(255, 203, 0, 0.2) 0px 9px 13px 0px;
+                    border-radius: 0 1.5em 1.5em 0;
+                }
+            }
+            & > span {
+                color: #eee;
+                margin: 0 2em;
+                line-height: 2.6em;
+            }
+            .collect-wrap {
+                .collect-bt {
+                    border-radius: 1.5em;
+                    color: rgb(143, 143, 143);
+                    &:hover {
+                        background-color: rgb(116, 110, 110);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

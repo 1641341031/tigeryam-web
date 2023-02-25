@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --colorgreen: rgb(7, 230, 70);
+    --colororigin: #ff915e;
+    --colortransition: 0.85s;
+    /* font-size: calc(.5em + 1vw); */
+}
+
+.container{
+    max-width: 1200px;
+    min-width: 1199px;
+    margin: 0 auto;
+}
